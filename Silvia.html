@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studi.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="all">
+    <div class="bord">
+        <table cellspacing="0">
+            <tr>
+                <td>Unitati de masura</td>
+                <td>Hotel</td>
+                <td >Restaurante</td>
+                <td>Produse</td>
+                <td>Contabilitate</td>
+                <td class="main">Avansate</td>
+                <td class="inl">
+                    <button > < </button> 
+                    <button > > </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="contentall">
+        <div class="unit">
+            <h3>Vanzator implicit</h3>
+            <hr>
+        </div>
+        <div class="info1">
+            <select name="alimentare" id="1" class="alimentare">
+                <option value="1"><p>S.C ALIMENTARA S.R.L</p></option>
+                <option value="2"><p>S.C OLARIA S.R.L</p></option>
+                <option value="3"><p>S.C JUCARIA S.R.L</p></option>
+            </select>
+            <button class="greenplus"> <img src="245-2458410_add-green-plus.png" alt="" > Adauga</button>
+            <button class="confirm"><img src="free-confirm-icon-3274-thumb.png" alt="">Modifica</button>
+        </div>
+        <div class="info2">
+            <table cellspacing = "0">
+                <tr class="cif">
+                    <td class="right">C.I.F :</td>
+                    <td><input type="text" placeholder="RO123456789" class="nr1"></td>
+                    <td >Nr de inreg. la Reg. Com.</td>
+                    <td ><input type="text" placeholder="J12/3456/2012" class="nr2"></td>
+                </tr>
+                <tr>
+                    <td>Adresa :</td>
+                    <td colspan="3"><input type="text" placeholder="STR.STRADA NR 1. 1,LOCALITATEA, JUDETUL, ROMANIA" class="nr3"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="info3">
+            <table>
+                <tr>
+                    <td><h3>Formular implicit</h3> <hr></td>
+                    <td><h3>Serie/nr.de.inreg.implicit:</h3> <hr></td>
+                    <td><h3>Moneda implicita</h3> <hr></td>
+                </tr>
+                <tr>
+                    <td class="t1">
+                        <select name="ch_univ_1" id="1" class="ch_un">
+                            <option value="1"><p>01.fact_lb_tva_univ_1</p></option>
+                            <option value="2"><p>option2</p></option>
+                            <option value="3"><p>option3</p></option>
+                        </select>
+                    </td>
+                    <td class="t2">
+                        <select name="[FACT_NR]" id="1">
+                            <option value="1"><p>[FACT_NR]</p></option>
+                            <option value="2"><p>option2</p></option>
+                            <option value="3"><p>option3</p></option>
+                        </select>
+                    </td>
+                    <td class="t3">
+                        <select name="Moneda" id="1">
+                            <option value="1"><p>RON</p></option>
+                            <option value="2"><p>option2</p></option>
+                            <option value="3"><p>option3</p></option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br><br>
+       <div class="info4">
+            <table>
+                <tr>
+                    <td class="opt"><h3>Pretul de vanzare/stoc</h3> <hr></td>
+                    <td><h3>Optimizare baze de date</h3> <hr></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="prety" id="1" checked>
+                        <label for="prety">Pretul de vanzare este stabilit doar pe baza urmatoarelor documente : <span>nota de receptie,p.v. de modificare pret,bon de transfer,factura(doar <span>pentru  servicii)</span></span></label>
+                        <br>
+                        <input type="checkbox" name="pret" id="1" checked>
+                        <label for="pret">Pretul de vanzare include TVA(intocmire documente)</label>
+                        <br>
+                        <input type="checkbox" name="fact" id="1">
+                        <label for="fact">Factura,bon consum-afiseaza doar produsele pe stoc (gest. cu ridicata)</label>
+                    </td>
+                    <td class="sus">
+                        Aceasta functie optimizeaza baza de date
+                        <br>
+                        <button>Optimizare</button>
+                    </td>
+                </tr>
+            </table>
+       </div>
+       <div class="info5">
+            <table>
+                <tr>
+                    <td class="full"><h3>Banci / IBAN</h3> <hr></td>
+                    <td class="semifull"><h3>Dosar POS</h3> <hr></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="IBAN" id="1" checked>
+                        <label for="IBAN">Validare IBAN</label>
+                    </td>
+                    <td>
+                        <select name="NIMIC" id="1">
+                            <option value="1"><p></p></option>
+                            <option value="2"><p></p></option>
+                            <option value="3"><p></p></option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+       </div>
+       <div class="info6">
+        <h3>Documente in asteptare/test/note deplata/comanda (cu numarul de inregistrare TEST_SOCNT)</h3> <hr>
+        
+        <select name="Docs" id="1">
+            <option value="1"><p>Documente in asteptare/test/note deplata/comanda sunt vizualizate</p></option>
+            <option value="2"><p>option2</p></option>
+            <option value="3"><p>option3</p></option>
+        </select>
+
+        <input type="checkbox" name="mis" id="1" checked>
+        <label for="mis">Limiteaza nr.documentelor in asteptare /test/note deplata/comanda :</label>
+
+        <input type="number" min="0" max="200" placeholder="100" class="osd">
+
+    </div>
+    </div>
+    <div class="save">
+        <button><img src="Paomedia-Small-N-Flat-Floppy.ico" alt="">Salveaza</button>
+        <button><img src="x-png-33.png" alt="">Renunta</button>
+    </div>
+</div>
+</body>
+</html>
